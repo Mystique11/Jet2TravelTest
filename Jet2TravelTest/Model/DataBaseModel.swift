@@ -38,7 +38,16 @@ class DataBaseModel: NSObject {
                                           insertInto: managedContext)
                     
                     article.setValue(entry.content, forKeyPath: "content")
-                    article.setValue(entry.createdAt, forKeyPath: "createdAt")
+                    
+                    
+                    let date = self.convertStringToDate(dateString: entry.createdAt)
+                   
+                    
+                    let difference = Date().offset(from: date)
+                    
+                    
+                    
+                    article.setValue(difference, forKeyPath: "createdAt")
                     article.setValue(entry.likes, forKeyPath: "likes")
                     article.setValue(entry.comments, forKeyPath: "comments")
                     article.setValue(entry.media.first?.image, forKeyPath: "articleImage")
@@ -90,5 +99,20 @@ class DataBaseModel: NSObject {
         } catch {
             fatalError("Failed to fetch employees: \(error)")
         }
+    }
+    
+    func convertStringToDate(dateString: String) -> Date{
+        let dateFormatter = DateFormatter()
+        
+        //2020-04-17T09:46:47.375Z
+
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'" //Your date format
+//        dateFormatter.timeZone = TimeZone(abbreviation: "GMT+0:00") //Current time zone
+        //according to date format your date string
+        guard let date = dateFormatter.date(from: dateString) else {
+            fatalError()
+        }
+        print(date) //Convert String to Date
+        return date
     }
 }

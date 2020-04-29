@@ -65,6 +65,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.lblDesignation.text = entry.designation
         cell.lblLikes.text = entry.likes.shorted()
         cell.lblComments.text = entry.comments.shorted()
+        cell.lblTime.text = entry.createdAt
 
         if entry.avatar?.count != 0 {
             setImageFromUrl(imageURL: entry.avatar!, imgView: cell.avatar)
