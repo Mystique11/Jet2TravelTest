@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F9364CAC245843F7006EF4EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9364CAB245843F7006EF4EE /* AppDelegate.swift */; };
+		F9364CAE245843F7006EF4EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9364CAD245843F7006EF4EE /* SceneDelegate.swift */; };
+		F9364CB6245843F7006EF4EE /* Jet2TravelTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9364CB4245843F7006EF4EE /* Jet2TravelTest.xcdatamodeld */; };
+		F9364CB8245843F8006EF4EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9364CB7245843F8006EF4EE /* Assets.xcassets */; };
+		F9364CBB245843F8006EF4EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9364CB9245843F8006EF4EE /* LaunchScreen.storyboard */; };
+		F9364CC6245843F9006EF4EE /* Jet2TravelTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9364CC5245843F9006EF4EE /* Jet2TravelTestTests.swift */; };
+		F9364CD1245843F9006EF4EE /* Jet2TravelTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9364CD0245843F9006EF4EE /* Jet2TravelTestUITests.swift */; };
+		F9364CE624584933006EF4EE /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9364CE524584933006EF4EE /* Service.swift */; };
+		F9364CE824584A2C006EF4EE /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9364CE724584A2C006EF4EE /* UserModel.swift */; };
+		F9364CF424584D9C006EF4EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9364CF324584D9C006EF4EE /* Main.storyboard */; };
+		F9364CF624584DFC006EF4EE /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9364CF524584DFC006EF4EE /* ListViewController.swift */; };
+		F9364CFA24585127006EF4EE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9364CF924585127006EF4EE /* Constants.swift */; };
+		F9364CFC24585864006EF4EE /* ArticleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9364CFB24585864006EF4EE /* ArticleData.swift */; };
+		F9364D0224586963006EF4EE /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9364D0024586963006EF4EE /* CustomCell.swift */; };
+		F9364D0324586963006EF4EE /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9364D0124586963006EF4EE /* CustomCell.xib */; };
+		F98EA69824593760007C3FC0 /* DataBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EA69724593760007C3FC0 /* DataBaseModel.swift */; };
+		F98EA69F24594350007C3FC0 /* Article+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EA69D24594350007C3FC0 /* Article+CoreDataClass.swift */; };
+		F98EA6A024594350007C3FC0 /* Article+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EA69E24594350007C3FC0 /* Article+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9364CC2245843F9006EF4EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9364CA0245843F7006EF4EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9364CA7245843F7006EF4EE;
+			remoteInfo = Jet2TravelTest;
+		};
+		F9364CCD245843F9006EF4EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9364CA0245843F7006EF4EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9364CA7245843F7006EF4EE;
+			remoteInfo = Jet2TravelTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F9364CA8245843F7006EF4EE /* Jet2TravelTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jet2TravelTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9364CAB245843F7006EF4EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F9364CAD245843F7006EF4EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F9364CB5245843F7006EF4EE /* Jet2TravelTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Jet2TravelTest.xcdatamodel; sourceTree = "<group>"; };
+		F9364CB7245843F8006EF4EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9364CBA245843F8006EF4EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F9364CBC245843F8006EF4EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9364CC1245843F9006EF4EE /* Jet2TravelTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Jet2TravelTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9364CC5245843F9006EF4EE /* Jet2TravelTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jet2TravelTestTests.swift; sourceTree = "<group>"; };
+		F9364CC7245843F9006EF4EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9364CCC245843F9006EF4EE /* Jet2TravelTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Jet2TravelTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9364CD0245843F9006EF4EE /* Jet2TravelTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jet2TravelTestUITests.swift; sourceTree = "<group>"; };
+		F9364CD2245843F9006EF4EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9364CE524584933006EF4EE /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		F9364CE724584A2C006EF4EE /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		F9364CF324584D9C006EF4EE /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F9364CF524584DFC006EF4EE /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		F9364CF924585127006EF4EE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F9364CFB24585864006EF4EE /* ArticleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleData.swift; sourceTree = "<group>"; };
+		F9364D0024586963006EF4EE /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		F9364D0124586963006EF4EE /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		F98EA69724593760007C3FC0 /* DataBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseModel.swift; sourceTree = "<group>"; };
+		F98EA69D24594350007C3FC0 /* Article+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Article+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F98EA69E24594350007C3FC0 /* Article+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Article+CoreDataProperties.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9364CA5245843F7006EF4EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9364CBE245843F9006EF4EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9364CC9245843F9006EF4EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F9364C9F245843F7006EF4EE = {
+			isa = PBXGroup;
+			children = (
+				F9364CAA245843F7006EF4EE /* Jet2TravelTest */,
+				F9364CC4245843F9006EF4EE /* Jet2TravelTestTests */,
+				F9364CCF245843F9006EF4EE /* Jet2TravelTestUITests */,
+				F9364CA9245843F7006EF4EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F9364CA9245843F7006EF4EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9364CA8245843F7006EF4EE /* Jet2TravelTest.app */,
+				F9364CC1245843F9006EF4EE /* Jet2TravelTestTests.xctest */,
+				F9364CCC245843F9006EF4EE /* Jet2TravelTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9364CAA245843F7006EF4EE /* Jet2TravelTest */ = {
+			isa = PBXGroup;
+			children = (
+				F9364CFD24586937006EF4EE /* CustomViews */,
+				F9364CE42458491F006EF4EE /* ViewModel */,
+				F9364CE32458465B006EF4EE /* View */,
+				F9364CDF2458444F006EF4EE /* Constants */,
+				F9364CE12458444F006EF4EE /* Model */,
+				F9364CE22458444F006EF4EE /* Helpers */,
+				F9364CE02458444F006EF4EE /* ViewControllers */,
+				F9364CDE2458444F006EF4EE /* Service */,
+				F9364CAB245843F7006EF4EE /* AppDelegate.swift */,
+				F9364CAD245843F7006EF4EE /* SceneDelegate.swift */,
+				F9364CB7245843F8006EF4EE /* Assets.xcassets */,
+				F9364CB9245843F8006EF4EE /* LaunchScreen.storyboard */,
+				F9364CBC245843F8006EF4EE /* Info.plist */,
+			);
+			path = Jet2TravelTest;
+			sourceTree = "<group>";
+		};
+		F9364CC4245843F9006EF4EE /* Jet2TravelTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				F9364CC5245843F9006EF4EE /* Jet2TravelTestTests.swift */,
+				F9364CC7245843F9006EF4EE /* Info.plist */,
+			);
+			path = Jet2TravelTestTests;
+			sourceTree = "<group>";
+		};
+		F9364CCF245843F9006EF4EE /* Jet2TravelTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F9364CD0245843F9006EF4EE /* Jet2TravelTestUITests.swift */,
+				F9364CD2245843F9006EF4EE /* Info.plist */,
+			);
+			path = Jet2TravelTestUITests;
+			sourceTree = "<group>";
+		};
+		F9364CDE2458444F006EF4EE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F9364CE524584933006EF4EE /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F9364CDF2458444F006EF4EE /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F9364CF924585127006EF4EE /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		F9364CE02458444F006EF4EE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F9364CF524584DFC006EF4EE /* ListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F9364CE12458444F006EF4EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F98EA69D24594350007C3FC0 /* Article+CoreDataClass.swift */,
+				F98EA69E24594350007C3FC0 /* Article+CoreDataProperties.swift */,
+				F9364CB4245843F7006EF4EE /* Jet2TravelTest.xcdatamodeld */,
+				F98EA69724593760007C3FC0 /* DataBaseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F9364CE22458444F006EF4EE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F9364CE32458465B006EF4EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F9364CF324584D9C006EF4EE /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F9364CE42458491F006EF4EE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F9364CE724584A2C006EF4EE /* UserModel.swift */,
+				F9364CFB24585864006EF4EE /* ArticleData.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F9364CFD24586937006EF4EE /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				F9364D0024586963006EF4EE /* CustomCell.swift */,
+				F9364D0124586963006EF4EE /* CustomCell.xib */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9364CA7245843F7006EF4EE /* Jet2TravelTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9364CD5245843F9006EF4EE /* Build configuration list for PBXNativeTarget "Jet2TravelTest" */;
+			buildPhases = (
+				F9364CA4245843F7006EF4EE /* Sources */,
+				F9364CA5245843F7006EF4EE /* Frameworks */,
+				F9364CA6245843F7006EF4EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jet2TravelTest;
+			productName = Jet2TravelTest;
+			productReference = F9364CA8245843F7006EF4EE /* Jet2TravelTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F9364CC0245843F9006EF4EE /* Jet2TravelTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9364CD8245843F9006EF4EE /* Build configuration list for PBXNativeTarget "Jet2TravelTestTests" */;
+			buildPhases = (
+				F9364CBD245843F9006EF4EE /* Sources */,
+				F9364CBE245843F9006EF4EE /* Frameworks */,
+				F9364CBF245843F9006EF4EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9364CC3245843F9006EF4EE /* PBXTargetDependency */,
+			);
+			name = Jet2TravelTestTests;
+			productName = Jet2TravelTestTests;
+			productReference = F9364CC1245843F9006EF4EE /* Jet2TravelTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F9364CCB245843F9006EF4EE /* Jet2TravelTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9364CDB245843F9006EF4EE /* Build configuration list for PBXNativeTarget "Jet2TravelTestUITests" */;
+			buildPhases = (
+				F9364CC8245843F9006EF4EE /* Sources */,
+				F9364CC9245843F9006EF4EE /* Frameworks */,
+				F9364CCA245843F9006EF4EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9364CCE245843F9006EF4EE /* PBXTargetDependency */,
+			);
+			name = Jet2TravelTestUITests;
+			productName = Jet2TravelTestUITests;
+			productReference = F9364CCC245843F9006EF4EE /* Jet2TravelTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9364CA0245843F7006EF4EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Prerna Chavan";
+				TargetAttributes = {
+					F9364CA7245843F7006EF4EE = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					F9364CC0245843F9006EF4EE = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = F9364CA7245843F7006EF4EE;
+					};
+					F9364CCB245843F9006EF4EE = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = F9364CA7245843F7006EF4EE;
+					};
+				};
+			};
+			buildConfigurationList = F9364CA3245843F7006EF4EE /* Build configuration list for PBXProject "Jet2TravelTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9364C9F245843F7006EF4EE;
+			productRefGroup = F9364CA9245843F7006EF4EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9364CA7245843F7006EF4EE /* Jet2TravelTest */,
+				F9364CC0245843F9006EF4EE /* Jet2TravelTestTests */,
+				F9364CCB245843F9006EF4EE /* Jet2TravelTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9364CA6245843F7006EF4EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9364CF424584D9C006EF4EE /* Main.storyboard in Resources */,
+				F9364CBB245843F8006EF4EE /* LaunchScreen.storyboard in Resources */,
+				F9364D0324586963006EF4EE /* CustomCell.xib in Resources */,
+				F9364CB8245843F8006EF4EE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9364CBF245843F9006EF4EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9364CCA245843F9006EF4EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9364CA4245843F7006EF4EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9364CAC245843F7006EF4EE /* AppDelegate.swift in Sources */,
+				F9364CE624584933006EF4EE /* Service.swift in Sources */,
+				F9364D0224586963006EF4EE /* CustomCell.swift in Sources */,
+				F98EA69824593760007C3FC0 /* DataBaseModel.swift in Sources */,
+				F9364CF624584DFC006EF4EE /* ListViewController.swift in Sources */,
+				F9364CFC24585864006EF4EE /* ArticleData.swift in Sources */,
+				F9364CB6245843F7006EF4EE /* Jet2TravelTest.xcdatamodeld in Sources */,
+				F98EA69F24594350007C3FC0 /* Article+CoreDataClass.swift in Sources */,
+				F98EA6A024594350007C3FC0 /* Article+CoreDataProperties.swift in Sources */,
+				F9364CE824584A2C006EF4EE /* UserModel.swift in Sources */,
+				F9364CAE245843F7006EF4EE /* SceneDelegate.swift in Sources */,
+				F9364CFA24585127006EF4EE /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9364CBD245843F9006EF4EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9364CC6245843F9006EF4EE /* Jet2TravelTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9364CC8245843F9006EF4EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9364CD1245843F9006EF4EE /* Jet2TravelTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F9364CC3245843F9006EF4EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9364CA7245843F7006EF4EE /* Jet2TravelTest */;
+			targetProxy = F9364CC2245843F9006EF4EE /* PBXContainerItemProxy */;
+		};
+		F9364CCE245843F9006EF4EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9364CA7245843F7006EF4EE /* Jet2TravelTest */;
+			targetProxy = F9364CCD245843F9006EF4EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F9364CB9245843F8006EF4EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9364CBA245843F8006EF4EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9364CD3245843F9006EF4EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F9364CD4245843F9006EF4EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9364CD6245843F9006EF4EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Jet2TravelTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prernachavan.Jet2TravelTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F9364CD7245843F9006EF4EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Jet2TravelTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prernachavan.Jet2TravelTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F9364CD9245843F9006EF4EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Jet2TravelTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prernachavan.Jet2TravelTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jet2TravelTest.app/Jet2TravelTest";
+			};
+			name = Debug;
+		};
+		F9364CDA245843F9006EF4EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Jet2TravelTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prernachavan.Jet2TravelTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jet2TravelTest.app/Jet2TravelTest";
+			};
+			name = Release;
+		};
+		F9364CDC245843F9006EF4EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Jet2TravelTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prernachavan.Jet2TravelTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Jet2TravelTest;
+			};
+			name = Debug;
+		};
+		F9364CDD245843F9006EF4EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Jet2TravelTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prernachavan.Jet2TravelTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Jet2TravelTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9364CA3245843F7006EF4EE /* Build configuration list for PBXProject "Jet2TravelTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9364CD3245843F9006EF4EE /* Debug */,
+				F9364CD4245843F9006EF4EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9364CD5245843F9006EF4EE /* Build configuration list for PBXNativeTarget "Jet2TravelTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9364CD6245843F9006EF4EE /* Debug */,
+				F9364CD7245843F9006EF4EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9364CD8245843F9006EF4EE /* Build configuration list for PBXNativeTarget "Jet2TravelTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9364CD9245843F9006EF4EE /* Debug */,
+				F9364CDA245843F9006EF4EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9364CDB245843F9006EF4EE /* Build configuration list for PBXNativeTarget "Jet2TravelTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9364CDC245843F9006EF4EE /* Debug */,
+				F9364CDD245843F9006EF4EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F9364CB4245843F7006EF4EE /* Jet2TravelTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F9364CB5245843F7006EF4EE /* Jet2TravelTest.xcdatamodel */,
+			);
+			currentVersion = F9364CB5245843F7006EF4EE /* Jet2TravelTest.xcdatamodel */;
+			path = Jet2TravelTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F9364CA0245843F7006EF4EE /* Project object */;
+}
