@@ -20,11 +20,10 @@
 		F9364CF624584DFC006EF4EE /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9364CF524584DFC006EF4EE /* ListViewController.swift */; };
 		F9364CFA24585127006EF4EE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9364CF924585127006EF4EE /* Constants.swift */; };
 		F9364CFC24585864006EF4EE /* ArticleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9364CFB24585864006EF4EE /* ArticleData.swift */; };
-		F9364D0224586963006EF4EE /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9364D0024586963006EF4EE /* CustomCell.swift */; };
-		F9364D0324586963006EF4EE /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9364D0124586963006EF4EE /* CustomCell.xib */; };
 		F98EA69824593760007C3FC0 /* DataBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EA69724593760007C3FC0 /* DataBaseModel.swift */; };
 		F98EA69F24594350007C3FC0 /* Article+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EA69D24594350007C3FC0 /* Article+CoreDataClass.swift */; };
 		F98EA6A024594350007C3FC0 /* Article+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98EA69E24594350007C3FC0 /* Article+CoreDataProperties.swift */; };
+		F9AE96AA245AC7F700150ECF /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AE96A9245AC7F700150ECF /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,11 +63,10 @@
 		F9364CF524584DFC006EF4EE /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		F9364CF924585127006EF4EE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F9364CFB24585864006EF4EE /* ArticleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleData.swift; sourceTree = "<group>"; };
-		F9364D0024586963006EF4EE /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
-		F9364D0124586963006EF4EE /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		F98EA69724593760007C3FC0 /* DataBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseModel.swift; sourceTree = "<group>"; };
 		F98EA69D24594350007C3FC0 /* Article+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Article+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F98EA69E24594350007C3FC0 /* Article+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Article+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F9AE96A9245AC7F700150ECF /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,8 +214,7 @@
 		F9364CFD24586937006EF4EE /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				F9364D0024586963006EF4EE /* CustomCell.swift */,
-				F9364D0124586963006EF4EE /* CustomCell.xib */,
+				F9AE96A9245AC7F700150ECF /* CustomCell.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -328,7 +325,6 @@
 			files = (
 				F9364CF424584D9C006EF4EE /* Main.storyboard in Resources */,
 				F9364CBB245843F8006EF4EE /* LaunchScreen.storyboard in Resources */,
-				F9364D0324586963006EF4EE /* CustomCell.xib in Resources */,
 				F9364CB8245843F8006EF4EE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,7 +352,6 @@
 			files = (
 				F9364CAC245843F7006EF4EE /* AppDelegate.swift in Sources */,
 				F9364CE624584933006EF4EE /* Service.swift in Sources */,
-				F9364D0224586963006EF4EE /* CustomCell.swift in Sources */,
 				F98EA69824593760007C3FC0 /* DataBaseModel.swift in Sources */,
 				F9364CF624584DFC006EF4EE /* ListViewController.swift in Sources */,
 				F9364CFC24585864006EF4EE /* ArticleData.swift in Sources */,
@@ -365,6 +360,7 @@
 				F98EA6A024594350007C3FC0 /* Article+CoreDataProperties.swift in Sources */,
 				F9364CE824584A2C006EF4EE /* UserModel.swift in Sources */,
 				F9364CAE245843F7006EF4EE /* SceneDelegate.swift in Sources */,
+				F9AE96AA245AC7F700150ECF /* CustomCell.swift in Sources */,
 				F9364CFA24585127006EF4EE /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

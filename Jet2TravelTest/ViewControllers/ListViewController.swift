@@ -21,8 +21,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         // Do any additional setup after loading the view.
         
-        tblView.register(UINib.init(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: "CustomCell")
-
+//        tblView.register(UINib.init(nibName: "CustomCell", bundle: nil), forCellReuseIdentifier: "CustomCell")
         
         userModel.downloadData { (isSuccess) in
             self.entries = self.userModel.loadData()
@@ -53,7 +52,16 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 290.0
+        
+        let entry = entries[indexPath.row]
+
+        if let imgURL = entry.articleImage {
+            if !imgURL.isEmpty {
+                return 260
+            }
+        }
+        
+        return 190
     }
     
     func configureCell(cell: CustomCell, indexPath: IndexPath){
@@ -63,16 +71,24 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.lblName.text = entry.userName
         cell.lblContent.text = entry.content
         cell.lblDesignation.text = entry.designation
-        cell.lblLikes.text = entry.likes.shorted()
-        cell.lblComments.text = entry.comments.shorted()
+        cell.lblLikes.text = "\(entry.likes.shorted()) Likes"
+        cell.lblComments.text = "\(entry.comments.shorted()) Comments"
         cell.lblTime.text = entry.createdAt
-
+        cell.avatar.layer.cornerRadius = 20.0
         if entry.avatar?.count != 0 {
             setImageFromUrl(imageURL: entry.avatar!, imgView: cell.avatar)
         }
-        if entry.articleImage?.count != 0 {
-            setImageFromUrl(imageURL: entry.articleImage!, imgView: cell.media)
+        if let validURL = entry.articleImage {
+            if !validURL.isEmpty {
+                setImageFromUrl(imageURL: validURL, imgView: cell.media)
+                cell.mediaHeightConstraint.constant = 95
+            }else{
+                cell.mediaHeightConstraint.constant = 0
+            }
+        }else{
+            cell.mediaHeightConstraint.constant = 0
         }
+        cell.layoutIfNeeded()
     }
     
     func setImageFromUrl(imageURL :String, imgView: UIImageView) {

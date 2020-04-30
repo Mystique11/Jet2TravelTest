@@ -39,13 +39,8 @@ class DataBaseModel: NSObject {
                     
                     article.setValue(entry.content, forKeyPath: "content")
                     
-                    
                     let date = self.convertStringToDate(dateString: entry.createdAt)
-                   
-                    
                     let difference = Date().offset(from: date)
-                    
-                    
                     
                     article.setValue(difference, forKeyPath: "createdAt")
                     article.setValue(entry.likes, forKeyPath: "likes")
