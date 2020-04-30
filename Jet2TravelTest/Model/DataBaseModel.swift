@@ -14,7 +14,6 @@ class DataBaseModel: NSObject {
     var articles: [Article] = []
     
     func insertIntoDataBase(entries: [ArticleData]) {
-        
         guard let appDelegate =
             UIApplication.shared.delegate as? AppDelegate else {
                 return
@@ -22,13 +21,9 @@ class DataBaseModel: NSObject {
         let managedContext =
             appDelegate.persistentContainer.viewContext
         
-        
-        
-        
         for entry in entries {
             
             if let user = entry.user.first {
-                
                 if !isExist(name: user.name){
                     
                     let entity =
@@ -63,14 +58,12 @@ class DataBaseModel: NSObject {
     }
     
     func isExist(name: String) -> Bool {
-        
         guard let appDelegate =
             UIApplication.shared.delegate as? AppDelegate else {
                 return false
         }
         let managedContext =
             appDelegate.persistentContainer.viewContext
-        
         
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Article")
         fetchRequest.predicate = NSPredicate(format: "userName contains[c] %@",name)
@@ -97,17 +90,12 @@ class DataBaseModel: NSObject {
     }
     
     func convertStringToDate(dateString: String) -> Date{
-        let dateFormatter = DateFormatter()
         
-        //2020-04-17T09:46:47.375Z
-
+        let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'" //Your date format
-//        dateFormatter.timeZone = TimeZone(abbreviation: "GMT+0:00") //Current time zone
-        //according to date format your date string
         guard let date = dateFormatter.date(from: dateString) else {
             fatalError()
         }
-        print(date) //Convert String to Date
         return date
     }
 }
